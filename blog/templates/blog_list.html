@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+	{% for blog in blogs %}
+		<a href="{% url 'blog_detail' blog.pk %}">{{blog.title}}<br></a>
+	{% endfor %}
+</body>
+</html>
